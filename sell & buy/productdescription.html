@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Description</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.0.0/dist/full.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
+        <div class="text-lg font-bold">Buy / Sells Corner</div>
+        <div class="flex items-center">
+            <input type="text" placeholder="Search" class="input input-bordered w-64 mr-4">
+            <button class="btn btn-ghost btn-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21l1.65-1.65a3 3 0 011.35-.35h10.08a3 3 0 011.35.35L21 21M16 3.13a4.22 4.22 0 01.88 4.42 9.12 9.12 0 00-4 7.88m-4-7.88a4.22 4.22 0 00-.88-4.42M12 14.5v5m0 0h6m-6 0H6"/></svg>
+            </button>
+            <div class="avatar">
+                <div class="w-8 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                    <img src="https://via.placeholder.com/150" />
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container mx-auto py-8">
+        <!-- Product Title and Price -->
+        <div class="bg-white rounded-lg shadow-lg p-6">
+            <div class="flex items-center">
+                <div class="w-1/2">
+                    <img src="https://via.placeholder.com/250" alt="Iphone XS" class="rounded-lg">
+                </div>
+                <div class="w-1/2 pl-6">
+                    <h2 class="text-3xl font-bold">Iphone XS</h2>
+                    <p class="text-2xl font-semibold text-green-600">Rs 80,000</p>
+                    <p class="text-gray-600 my-4">Iphone XS MAX 64GB PTA APPROVED</p>
+                    <div class="flex items-center mb-4">
+                        <div class="avatar mr-4">
+                            <div class="w-12 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                <img src="https://via.placeholder.com/150" />
+                            </div>
+                        </div>
+                        <div>
+                            <p class="font-bold">M Ali</p>
+                            <p class="text-sm text-gray-500">Member since June 2024</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-4 mb-4">
+                        <button class="btn btn-primary">Call Now</button>
+                        <button class="btn btn-secondary">Chat</button>
+                        <button class="btn btn-accent">See Profile</button>
+                    </div>
+                    <button class="btn btn-wide btn-outline btn-warning">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Details Section -->
+        <div class="bg-white rounded-lg shadow-lg p-6 mt-8">
+            <h3 class="text-2xl font-bold mb-4">Details</h3>
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <p class="font-semibold">Is Deliverable: <span class="font-normal">No</span></p>
+                    <p class="font-semibold">Brand: <span class="font-normal">Apple</span></p>
+                </div>
+                <div>
+                    <p class="font-semibold">Price: <span class="font-normal">Rs 80,000</span></p>
+                    <p class="font-semibold">Condition: <span class="font-normal">Used</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Description Section -->
+        <div class="bg-white rounded-lg shadow-lg p-6 mt-8">
+            <h3 class="text-2xl font-bold mb-4">Description</h3>
+            <p class="text-gray-600">Iphone XS MAX 64GB PTA APPROVED</p>
+        </div>
+    </div>
+</body>
+</html>

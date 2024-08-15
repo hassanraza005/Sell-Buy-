@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Ad Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex justify-center items-center h-screen">
+    <div class="container mx-auto text-center">
+        <header class="mb-8 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600">Buy / Sells Corner</h1>
+            <div class="flex items-center space-x-2">
+                <img src="https://via.placeholder.com/40" alt="User Avatar" class="rounded-full w-10 h-10">
+                <span class="text-gray-700">User</span>
+            </div>
+        </header>
+        <div class="bg-red-50 p-8 rounded-lg shadow-lg max-w-xl mx-auto">
+            <h2 class="text-xl font-bold mb-6">Post AD</h2>
+            <form>
+                <div class="mb-6">
+                    <div class="bg-blue-600 text-white p-12 rounded-lg relative flex items-center justify-center">
+                        <span class="absolute text-2xl">+</span>
+                        <input type="file" class="opacity-0 absolute inset-0 w-full h-full cursor-pointer">
+                        <span>Upload  Product Photo</span>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <input type="text" placeholder="Product Title" class="w-full p-3 border-b-2 border-gray-300 outline-none focus:border-blue-600" required>
+                </div>
+                <div class="mb-4">
+                    <input type="text" placeholder="Product Description" class="w-full p-3 border-b-2 border-gray-300 outline-none focus:border-blue-600" required>
+                </div>
+                <div class="mb-4">
+                    <input type="text" placeholder="RS Enter Price" class="w-full p-3 border-b-2 border-gray-300 outline-none focus:border-blue-600" required>
+                </div>
+                <div class="mb-4">
+                    <input type="text" placeholder="Enter Your Name" class="w-full p-3 border-b-2 border-gray-300 outline-none focus:border-blue-600" required>
+                </div>
+                <div class="mb-4">
+                    <input type="text" placeholder="Enter Your Number" class="w-full p-3 border-b-2 border-gray-300 outline-none focus:border-blue-600" required>
+                </div>
+
+                <button type="submit" onclick="window.location.href='./productads.html'" class="w-full bg-blue-600 text-white p-3 rounded hover:bg-blue-700">Post Now</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
