@@ -11,8 +11,8 @@
         <header class="mb-8 flex justify-between items-center">
             <h1 class="text-2xl font-bold text-blue-600">Buy / Sells Corner</h1>
             <div class="flex items-center space-x-2">
-                <img src="https://via.placeholder.com/40" alt="User Avatar" class="rounded-full w-10 h-10">
-                <span class="text-gray-700">User</span>
+                <img src="https://avatars.githubusercontent.com/u/153517064?v=4" alt="User Avatar" class="rounded-full w-10 h-10">
+                <span class="text-gray-700">Muhammad Hassan Raza</span>
             </div>
         </header>
         <div class="bg-red-50 p-8 rounded-lg shadow-lg max-w-xl mx-auto">
@@ -23,6 +23,27 @@
                         <span class="absolute text-2xl">+</span>
                         <input type="file" class="opacity-0 absolute inset-0 w-full h-full cursor-pointer">
                         <span>Upload  Product Photo</span>
+                       
+
+<!-- <script>
+  document.getElementById('productImage').addEventListener('change', function(event) {
+    const file = event.target.files[0];
+    const storageRef = storage.ref('products/' + file.name);
+    const uploadTask = storageRef.put(file);
+
+    uploadTask.on('state_changed', function(snapshot) {
+      
+    }, function(error) {
+      alert('Error: ' + error.message);
+    }, function() {
+      uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
+        console.log('File available at', downloadURL);
+ 
+      });
+    });
+  });
+</script> -->
+
                     </div>
                 </div>
                 <div class="mb-4">
@@ -45,5 +66,7 @@
             </form>
         </div>
     </div>
+
+  
 </body>
 </html>
